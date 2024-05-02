@@ -1,15 +1,15 @@
 package shushangshixun.shixun10;
 
 public class s2 implements Runnable{
-    int mum = 10;
+    int m = 10;
     public synchronized void s(){
-        if(mum > 0){
+        if(m > 0){
             try{
                 Thread.sleep(100);
             }catch(Exception e){
                 e.printStackTrace();
             }
-            System.out.println(Thread.currentThread().getName() + "说：num的值为" + mum--);
+            System.out.println(Thread.currentThread().getName() + "说：num的值为" + m--);
         }
     }
     public void run() {
